@@ -1,0 +1,263 @@
+@font-face {
+  font-family: AvenirB;
+  src: url(./Font/Avenir.ttf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./Font/Avenir2.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+  font-weight: 100 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*scroll-snap-align: start;
+  scroll-snap-type: Y mandatory; */
+  position: relative;
+}
+
+body {
+  color: #fff;
+  background-color: #040714;
+}
+
+.btn-them-disney {
+  color: #fff;
+  background-color: #0063e5;
+  padding: 0.5rem 3rem;
+  font-size: 17px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: none;
+  text-transform: uppercase;
+  margin-top: 2vh;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-them-disney:hover {
+  background-color: #0099ff;
+}
+
+.mt {
+  margin-top: 4rem;
+}
+
+.View {
+  color: #f9f9f9;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+  .View {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .View {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  .btn-them-disney {
+    font-size: 15px;
+    padding: 0.5rem 1.7rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .btn-them-disney {
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .btn-them-disney {
+    font-size: 10px;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .get-bundle-btn {
+    font-size: 15px !important;
+  }
+}
+
+.disney-titles {
+  font-weight: 500 !important;
+  line-height: 2.5rem;
+  font-family: AvenirB;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .disney-titles {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 991px) {
+  .disney-titles {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  .disney-titles {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .disney-titles {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+.pg {
+  padding: 50px 5%;
+  position: relative;
+}
+
+.center-f {
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  column-gap: 18px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 650px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    column-gap: 18px;
+  }
+}
+
+.grid-list {
+  grid-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.tab-contents ul li {
+  list-style: none;
+}
+
+.tab-contents ul li img {
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-links {
+  position: relative;
+  margin: 0 2vw;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 300 !important;
+  cursor: pointer;
+}
+
+.kld {
+  position: relative;
+}
+
+.kld::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: #f9f9f9;
+}
+
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .tab-links {
+    font-size: 11px;
+  }
+
+  .kld::after {
+    top: 18px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .tab-links {
+    font-size: 12px;
+  }
+
+  .kld::after {
+    top: 18px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 550px) {
+  .tab-links {
+    font-size: 14px;
+  }
+
+  .kld::after {
+    top: 22px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 778px) {
+  .tab-links {
+    font-size: 14px;
+  }
+
+  .kld::after {
+    top: 22px;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 374px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}

@@ -1,0 +1,131 @@
+:root {
+  --primary: White;
+  --secondary: SpringGreen;
+  --white: #ffffff;
+  --whitelight: rgba(255, 255, 255, 0.6);
+  --blackdark: rgba(0, 0, 0, 0.6);
+  --blacklight: rgba(0, 0, 0, 0.2);
+  --chromecast-icon-size: 16px;
+}
+
+.title_video {
+  text-align: center;
+  font-family: AvenirB, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 18px;
+  font-weight: medium;
+}
+
+#my_video_1 {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  margin: 1.5rem auto;
+  align-items: center;
+  align-self: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.section {
+  background-image: url("../Components/Images/background.png");
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.vjs-tech:focus-visible {
+  outline: none;
+}
+.video-js {
+  width: 100%;
+  min-height: 320px;
+}
+
+.video-js .vjs-loading-spinner {
+  border-color: var(--blackdark);
+}
+
+.video-js .vjs-loading-spinner:before {
+  border-top-color: var(--white) !important;
+}
+
+.video-js .vjs-loading-spinner:after {
+  border-top-color: var(--whitelight);
+}
+
+.video-js .vjs-control-bar {
+  display: flex;
+}
+
+/* .video-js .vjs-control-bar {
+  background-color: #040714 !important;
+} */
+
+.video-js .vjs-playback-rate .vjs-playback-rate-value {
+  font-size: 1em;
+  line-height: 3;
+}
+
+.video-js .vjs-play-progress {
+  background-color: var(--primary);
+}
+
+.video-js .vjs-play-progress:before {
+  color: var(--primary);
+}
+
+.video-js .vjs-load-progress div {
+  background-color: var(--whitelight);
+}
+
+.video-js .vjs-slider {
+  background-color: var(--secondary);
+}
+
+.video-js .vjs-big-play-button {
+  display: block;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--blackLight) !important;
+}
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus {
+  background-color: var(--blackDark) !important;
+}
+
+.vjs-vtt-thumbnails {
+  display: block;
+}
+
+.vjs-vtt-thumbnail-display {
+  position: absolute;
+  transition: transform 0.1s, opacity 0.2s;
+  bottom: 85%;
+  pointer-events: none;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+
+.vjs-chromecast-button {
+  cursor: pointer;
+}
+
+.vjs-icon-placeholder {
+  background-size: contain;
+  display: inline-block;
+  width: var(--chromecast-icon-size);
+  height: var(--chromecast-icon-size);
+}
