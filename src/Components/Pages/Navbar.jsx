@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
         </MenuLinks>
         <UserAuth>
-          <img onClick={ifPopupOpen} src={admin} alt="admin/disney" />
+          <img onClick={ifPopupOpen} src="https://mir-s3-cdn-cf.behance.net/user/230/baee4e1454680219.63c4361a6a46d.jpg" alt="admin/disney" />
         </UserAuth>
 
         <PopupMenu activeState={Toggler}>
