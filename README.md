@@ -1,4 +1,9 @@
 ### Disney Plues 
 
+``Install``
 
-`bash`
+```bash
+npm install
+# or
+yarn 
+```
